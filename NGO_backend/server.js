@@ -1,25 +1,28 @@
 const express = require('express');
-const router = express.Router();
-const Volunteer = require('./models/Volunteer');
+const mongoose = require('mongoose');
+const dotenv = require('dotenv');
+const cors = require('cors');
+const volunteerRoutes = require('./routes/volunteerRoutes');
 
-// @route   POST /api/volunteers
-// @desc    Save volunteer form data
-router.post('/', async (req, res) => {
-  const { name, email, phone, message } = req.body;
+dotenv.config();
 
-  // Basic backend validation
-  if (!name || !email || !phone || !message) {
-    return res.status(400).json({ error: 'All fields are required.' });
-  }
+const app = express();
+app.use(cors());
+app.use(express.json());
 
-  try {
-    const newVolunteer = new Volunteer({ name, email, phone, message });
-    await newVolunteer.save();
-    res.status(201).json({ message: 'Registered successfully!' });
-  } catch (error) {
-    console.error('Error saving volunteer:', error);
-    res.status(500).json({ error: 'Server error. Please try again later.' });
-  }
+// Routes
+app.use('/api/volunteers', volunteerRoutes);
+
+// MongoDB Connection
+mongoose.connect(process.env.MONGO_URI, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true
+})
+.then(() => console.log('MongoDB connected'))
+.catch(err => console.error('MongoDB connection error:', err));
+
+// Start server (IMPORTANT for Render!)
+const PORT = process.env.PORT || 5000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
-
-module.exports = router;
