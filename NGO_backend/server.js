@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const Volunteer = require('../models/Volunteer');
+const Volunteer = require('./models/Volunteer');
 
 // @route   POST /api/volunteers
 // @desc    Save volunteer form data
