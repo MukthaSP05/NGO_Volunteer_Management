@@ -1,0 +1,173 @@
+/* styles.css */
+
+/* Set background image with dark overlay */
+body {
+  font-family: 'Poppins', sans-serif;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+              url('ngo_picture.PNG') no-repeat center center fixed;
+  color: #333;
+  background-size: cover;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Main container */
+.container {
+  max-width: 900px;
+  margin: 60px auto;
+  padding: 40px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+  background: 
+    linear-gradient(rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.8)),
+    url('ngo_picture.PNG') no-repeat center center;
+  background-size: cover;
+  backdrop-filter: blur(6px);
+  box-sizing: border-box;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  color: #0077cc;
+}
+
+/* Form styling */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 12px;
+  font-weight: 600;
+  color: #333;
+}
+
+input,
+textarea {
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  background-color: #fefefe;
+  transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #007BFF;
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+/* Submit Button */
+button {
+  margin-top: 20px;
+  padding: 14px;
+  background: linear-gradient(to right, #007BFF, #00bfff);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+}
+
+button:hover {
+  background: linear-gradient(to right, #0056b3, #0099cc);
+  transform: scale(1.02);
+}
+
+#responseMessage {
+  margin-top: 15px;
+  text-align: center;
+  color: green;
+  font-weight: 500;
+}
+
+/* Volunteer Cards */
+.volunteer-card {
+  background-color: rgba(255, 255, 255, 0.95);
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 12px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.volunteer-card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.volunteer-card h3 {
+  margin: 0 0 10px;
+  color: #007BFF;
+}
+
+.volunteer-card p {
+  margin: 5px 0;
+  color: #444;
+}
+
+/* NGO image at top of form/list */
+.ngo-image-wrapper {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.ngo-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 14px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+  object-fit: cover;
+}
+
+/* Mobile responsiveness fix: add spacing on sides for small screens */
+@media screen and (max-width: 600px) {
+  .container {
+    margin: 40px 16px; /* Adds horizontal spacing */
+    padding: 20px;      /* Smaller padding inside the container */
+  }
+}
+#responseMessage {
+  margin-top: 15px;
+  text-align: center;
+  font-weight: 500;
+  color: red;
+}
+#responseMessage.success {
+  color: green;
+  font-weight: bold;
+}
+
+#responseMessage.error {
+  color: red;
+  font-weight: bold;
+}
+
+/* Back to Home Button */
+.back-home-btn {
+  display: inline-block;
+  margin-top: 24px;
+  padding: 12px 24px;
+  background: linear-gradient(to right, #007BFF, #00bfff);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background 0.3s ease, transform 0.2s ease;
+  text-align: center;
+}
+
+.back-home-btn:hover {
+  background: linear-gradient(to right, #0056b3, #0099cc);
+  transform: scale(1.05);
+}
