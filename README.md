@@ -79,6 +79,16 @@ Navigate to the backend folder:
 index.html, register.html, view.html, and assets
 4. Netlify will generate a live frontend URL
 
+## Admin Login
+
+To access the admin view:
+
+1. Create a `.env` file in the backend directory.
+2. Add the following variable:
+    - ADMIN_PASSWORD = Your Test Password
+3. Start the backend server.
+    - The admin dashboard can be accessed at `/admin`. Enter the password when prompted.
+
 ## ✅ Features
 - Volunteer registration form
 
