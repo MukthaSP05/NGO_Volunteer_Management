@@ -100,12 +100,12 @@ index.html, register.html, view.html, and assets
 ## 📸 Screenshots
 
 ### • Home Page  
-[![Home](Screenshots/Home.PNG)](Screenshots/Home.PNG)
+[![Home](Screenshots/Home.png)](Screenshots/Home.png)
 
 ### • Registration Form  
-[![Register](Screenshots/Volunteer_registration.PNG)](Screenshots/Volunteer_registration.PNG)  
-[![Back](Screenshots/volunteer_registration_back_to_home.PNG)](Screenshots/volunteer_registration_back_to_home.PNG)
+[![Register](Screenshots/Volunteer_registration.png)](Screenshots/Volunteer_registration.png)  
+[![Back](Screenshots/volunteer_registration_back_to_home.png)](Screenshots/volunteer_registration_back_to_home.png)
 
 ### • Admin Panel (Volunteers List)  
-[![Admin](Screenshots/admin_view.PNG)](Screenshots/admin_view.PNG)  
-[![Back](Screenshots/admin_view_back_to_home.PNG)](Screenshots/admin_view_back_to_home.PNG)
+[![Admin](Screenshots/admin_view.png)](Screenshots/admin_view.png)  
+[![Back](Screenshots/admin_view_back_to_home.png)](Screenshots/admin_view_back_to_home.png)
