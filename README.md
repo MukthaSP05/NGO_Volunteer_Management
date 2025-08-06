@@ -36,11 +36,11 @@ NGO_Volunteer_Management/
 │ ├── register.js
 │ └── view.js
 ├── Screenshots/
-│ ├── Home.PNG
-│ ├── Volunteer_registration.PNG
-│ ├── volunteer_registration_back_to_home.PNG
-│ ├── admin_view.PNG
-│ └── admin_view_back_to_home.PNG
+│ ├── Home.png
+│ ├── Volunteer_registration.png
+│ ├── volunteer_registration_back_to_home.png
+│ ├── admin_view.png
+│ └── admin_view_back_to_home.png
 ```
 
 ## 🧩 Setup Instructions
