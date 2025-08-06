@@ -31,7 +31,7 @@ NGO_Volunteer_Management/
 ├── public/ (# Frontend)
 │ ├── index.html
 │ ├── register.html
-│ ├── view.html (password: admin123)
+│ ├── view.html
 │ ├── style.css
 │ ├── register.js
 │ └── view.js
