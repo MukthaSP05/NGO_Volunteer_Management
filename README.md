@@ -31,7 +31,7 @@ NGO_Volunteer_Management/
 ├── public/ (# Frontend)
 │ ├── index.html
 │ ├── register.html
-│ ├── view.html
+│ ├── view.html (password: admin123)
 │ ├── style.css
 │ ├── register.js
 │ └── view.js
@@ -50,7 +50,7 @@ Navigate to the backend folder:
 - cd ngo-backend
 - npm install
 - Create a .env file with your MongoDB URI:
--  MONGO_URI=your_mongodb_connection_string
+- MONGO_URI=your_mongodb_connection_string
 - Start the backend server:
 - node server.js
 - Your backend will run at: http://localhost:5000
